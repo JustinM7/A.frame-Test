@@ -1,0 +1,127 @@
+
+<style>
+body {
+    background-color: lightblue;
+}
+</style>
+<!-- Production Version, Minified -->
+<script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+<body>
+<a-animation>
+<a-scene >
+  <a-assets>
+    <audio id = 'a1' src = "wav\a1.wav">
+    <audio id = 'a1s'src = "wav\a1s.wav">
+    <audio id = 'b1' src = "wav\b1.wav">
+    <audio id = "c1" src = "wav\c1.wav">
+    <audio id = "c1s" src = "wav\c1s.wav">
+    <audio id = "c2" src = "wav\c2.wav">
+    <audio id = "d1" src = "wav\d1.wav">
+    <audio id = "d1s" src = "wav\d1s.wav">
+    <audio id = "e1" src = "wav\e1.wav">
+    <audio id = "f1" src = "wav\f1.wav">
+  </a-assets>
+<!-A1key -!>
+<a-box sound="src: #a1; on: click" position="0 .5 -2"  width=".5" height=".5" depth="2" color="#fffff0">
+<a-animation attribute="position"
+  begin="click"
+  fill="none"
+  dur = "100"
+  repeat='0'
+  to="0 .4 -2">
+</a-animation>
+</a-box>
+<!-A1Skey -!>
+<a-box sound="src: #a1s; on: click" position=".3 .67 -2.5"  width=".2.5" height=".5" depth="2" color="black">
+<a-animation attribute="position"
+ begin="click"
+ dur = "100"
+ repeat='0'
+ dur = "100"
+ to=".3 .57 -2.5 "
+ fill="none"
+ >
+</a-animation>
+</a-box>
+<!-B1key -!>
+<a-box sound="src: #b1; on: click" position=".6 .5 -2"  width=".5" height=".5" depth="2" color="#fffff0">
+<a-animation attribute="position"
+  begin="click"
+  dur = "100"
+  repeat='0'
+  to=".6 .4 -2 "
+  fill="none"
+  >
+</a-animation>
+</a-box>
+<!-C1key -!>
+<a-box sound="src: #c1; on: click" position=".9 .67 -2.5"  width=".2.5" height=".5" depth="2" color="black">
+<a-animation attribute="position"
+  begin="click"
+  dur = "100"
+  repeat='0'
+  to = ".9 .57 -2.5"
+  fill="none"
+  >
+</a-animation>
+</a-box>
+<!-C1Skey -!>
+<a-box sound="src: #c1s; on: click" position="1.2 .5 -2"  width=".5" height=".5" depth="2" color="#fffff0">
+<a-animation attribute="position"
+  begin="click"
+  dur = "100"
+  repeat='0'
+  to = "1.2 .4 -2"
+  fill="none">
+</a-animation>
+</a-box>
+<!-D1key -!>
+<a-box sound="src: #d1; on: click" position="1.5 .67 -2.5"  width=".2.5" height=".5" depth="2" color="black">
+<a-animation attribute="position"
+  begin="click"
+  dur = "100"
+  repeat='0'
+  to = "1.5 .57 -2.5"
+  fill="none">
+</a-animation>
+</a-box>
+<!-D1Skey -!>
+<a-box sound = "src: #d1s; on: click" position="1.8 .5 -2"  width=".5" height=".5" depth="2" color="#fffff0">
+  <a-animation attribute="position"
+    begin="click"
+    dur = "100"
+    repeat='0'
+    to = "1.8 .4 -2"
+    fill="none">
+  </a-animation>
+  </a-box>
+
+  <!-E1key -!>
+  <a-box sound="src: #e1; on: click;" position="2.1 .67 -2.5"  width=".2.5" height=".5" depth="2" color="black">
+  <a-animation attribute="position"
+    begin="click"
+    dur = "100"
+    repeat='0'
+    to = "2.1 .57 -2.5"
+    fill="none">
+  </a-animation>
+</a-box>
+<!-f1key -!>
+<a-box sound = "src: #f1; on: click" position="2.4 .5 -2"  width=".5" height=".5" depth="2" color="#fffff0">
+  <a-animation attribute="position"
+    begin="click"
+    dur = "100"
+    repeat='0'
+    to = "2.4 .4 -2"
+    fill="none">
+  </a-animation>
+  </a-box>
+<!--<a-box position=".9 .67 -4.8"  width="3" height="1" depth="4" color="black"></a-box> -->
+<a-camera position="0 1.8 0">
+  <a-cursor color="#2E3A87"></a-cursor>
+</a-camera>
+  </a-scene>
+</a-animation>
+</body>
+
+ <a-camera></a-camera>
